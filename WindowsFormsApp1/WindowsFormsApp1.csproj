@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA1CA447-754C-4D89-B4A2-A28F248551FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fPasswortNeu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPasswortNeu.Designer.cs">
+      <DependentUpon>fPasswortNeu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kBild.cs" />
+    <Compile Include="kDatenbank.cs" />
+    <Compile Include="fAnmelden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAnmelden.Designer.cs">
+      <DependentUpon>fAnmelden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUebersicht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUebersicht.Designer.cs">
+      <DependentUpon>fUebersicht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fToolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fToolbar.Designer.cs">
+      <DependentUpon>fToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPasswoerter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPasswoerter.Designer.cs">
+      <DependentUpon>fPasswoerter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNotizen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNotizen.Designer.cs">
+      <DependentUpon>fNotizen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBilder.Designer.cs">
+      <DependentUpon>fBilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNotizenNeu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNotizenNeu.Designer.cs">
+      <DependentUpon>fNotizenNeu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kAnmelden.cs" />
+    <Compile Include="kNotiz.cs" />
+    <Compile Include="kPasswort.cs" />
+    <Compile Include="kProfil.cs" />
+    <Compile Include="kProgram.cs" />
+    <Compile Include="kSicherheit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAnmelden.resx">
+      <DependentUpon>fAnmelden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUebersicht.resx">
+      <DependentUpon>fUebersicht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fToolbar.resx">
+      <DependentUpon>fToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPasswoerter.resx">
+      <DependentUpon>fPasswoerter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNotizen.resx">
+      <DependentUpon>fNotizen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBilder.resx">
+      <DependentUpon>fBilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNotizenNeu.resx">
+      <DependentUpon>fNotizenNeu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PasswortDatanbank.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
